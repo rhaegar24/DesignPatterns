@@ -3,7 +3,7 @@ package org.lld;
 /**
  * This is an example of an immutable class
  * 1. this is final class => it cannot be inherited
- * 2. all the variables are final => there values once assigned cannot be changes
+ * 2. all the variables are final => there values once assigned cannot be changed
  * 3. there are no setters for the variables => variable values cannot be changed
  * 4. reference variable eg Engine, whenever its being set in the constructor a new object for it is being
  * created => deep copy the reference variable to ensure new memory is allocated to that reference
