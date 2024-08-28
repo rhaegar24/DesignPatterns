@@ -23,38 +23,56 @@ public class Main {
      **/
 
     /**
-      Engine e = new Engine(4);
-      Engine e2 = e;
-
-      System.out.println(e.equals(e2));
-      e2.setCylinders(6);
-      System.out.println(e.equals(e2));
-
-      System.out.println(e.hashCode());
-      System.out.println(e2.hashCode());
-    **/
-
-    /**
-      MULTITHREADING
-      ThreadTest t1 = new ThreadTest();
-      t1.setName("Thread 1");
-      ThreadTest t2 = new ThreadTest();
-      t2.setName("Thread 2");
-      ThreadTest t3 = new ThreadTest();
-      t3.setName("Thread 3");
-
-      t3.setPriority(5);
-      t2.setPriority(6);
-      t1.setPriority(7);
-
-      t3.start();
-      t1.start();
-      t2.start();
+     * Engine e = new Engine(4);
+     * Engine e2 = e;
+     *
+     * System.out.println(e.equals(e2));
+     * e2.setCylinders(6);
+     * System.out.println(e.equals(e2));
+     *
+     * System.out.println(e.hashCode());
+     * System.out.println(e2.hashCode());
      **/
 
+    /**
+     * MULTITHREADING
+     * ThreadTest t1 = new ThreadTest();
+     * t1.setName("Thread 1");
+     * ThreadTest t2 = new ThreadTest();
+     * t2.setName("Thread 2");
+     * ThreadTest t3 = new ThreadTest();
+     * t3.setName("Thread 3");
+     *
+     * t3.setPriority(5);
+     * t2.setPriority(6);
+     * t1.setPriority(7);
+     *
+     * t3.start();
+     * t1.start();
+     * t2.start();
+     **/
 
-    User2 user = User2.builder().setUserId("fuck").setUserEmail("you").build();
-
-
+    /**
+     * This is an example of observer design pattern
+     * in this pattern whenever a change is made in the subject all of its objects(observers) are notified about the changes
+     * this follows one-to-many relation
+     * in our case we keep a Subject interface, and it has 3 functions
+     * subscribe() where an observer can subscribe to the subject
+     * unSubscribe() where an observer can subscribe to the subject
+     * notifyChanges() where all the observers/subscribers are notified
+     * there will be an Observer interface with just 1 method notified
+     *
+     *     Observer observer1 = new Subscriber("Cristiano");
+     *     Observer observer2 = new Subscriber("Bale");
+     *     Observer observer3 = new Subscriber("Benzema");
+     *
+     *     Subject subject = new YouTube();
+     *     subject.subscribe(observer1);
+     *     subject.subscribe(observer2);
+     *     subject.subscribe(observer3);
+     *
+     *     subject.notifySubscribers();
+     *
+     */
   }
 }
