@@ -53,5 +53,8 @@ public class Main {
      **/
 
 
+    User2 user = User2.builder().setUserId("fuck").setUserEmail("you").build();
+
+
   }
 }
