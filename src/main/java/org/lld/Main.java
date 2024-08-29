@@ -1,9 +1,12 @@
 package org.lld;
 
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 import java.util.*;
 
 public class Main {
-  public static void main(String[] args) throws InterruptedException {
+  public static void main(String[] args) throws InterruptedException, NoSuchMethodException, InvocationTargetException,
+          InstantiationException, IllegalAccessException {
 
     /**
      * BUILDER DESIGN PATTERN
@@ -74,5 +77,27 @@ public class Main {
      *     subject.notifySubscribers();
      *
      */
+
+    Set<String> set = new HashSet<>();
+    set.add("fuck");
+    Iterator<String> itr1 = set.iterator();
+    Map<String, String> map = new HashMap<>();
+    map.put("fuck", "you");
+    Iterator<String> itr2 = map.keySet().iterator();
+
+    /*
+     Singleton singleton = Singleton.getObject();
+     System.out.println(singleton.hashCode());
+     Singleton singleton2 = Singleton.getObject();
+     System.out.println(singleton2.hashCode());
+     Singleton singleton3 = Singleton.getObject();
+     System.out.println(singleton3.hashCode());
+
+     Constructor<Singleton> constructor = Singleton.class.getDeclaredConstructor();
+     constructor.setAccessible(true);
+     Singleton singleton4 = constructor.newInstance();
+     System.out.println(singleton4.hashCode());
+     */
+
   }
 }
