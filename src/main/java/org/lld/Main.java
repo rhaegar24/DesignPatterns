@@ -85,7 +85,7 @@ public class Main {
     map.put("fuck", "you");
     Iterator<String> itr2 = map.keySet().iterator();
 
-    /*
+    /*\
      Singleton singleton = Singleton.getObject();
      System.out.println(singleton.hashCode());
      Singleton singleton2 = Singleton.getObject();
