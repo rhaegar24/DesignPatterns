@@ -1,18 +1,15 @@
 package org.lld.StateMachineDesignPattern.VendingMachine;
 
-interface State {
-    /**
-     * use this interface to keep all the functions of all the states, implement the functions of the appropriate
-     * states and throw exceptions in invalid functions
-     */
+public interface State {
+  /**
+   * use this interface to keep all the functions of all the states, implement the functions of the
+   * appropriate states and throw exceptions in invalid functions
+   */
+  void chooseProduct(VendingMachine vendingMachine);
 
-    private int getSum() {
-        return 2;
-    }
+  void enterProductCode(VendingMachine vendingMachine, Integer code);
 
-    default int getMultiplication(){
-        return getSum();
-    }
+  void insertMoney(VendingMachine vendingMachine, Integer money);
 
-    public abstract int getDiv();
+  void disperseProduct(VendingMachine vendingMachine);
 }
