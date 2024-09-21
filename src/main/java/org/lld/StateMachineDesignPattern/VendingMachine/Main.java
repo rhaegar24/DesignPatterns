@@ -17,7 +17,7 @@ class Main {
 
     System.out.println("Choosing product");
 
-    // changing state from idle ste to chose product state
+    // changing state from idle state to chose product state
     vendingMachine.getState().chooseProduct(vendingMachine);
 
     System.out.println("Entering product code");
