@@ -3,7 +3,7 @@ package org.lld.FactoryDesignPattern;
 public class Client {
     public static void main(String [] args){
         /**
-         * Here we test how factory design pattern workds
+         * Here we test how factory design pattern works
          * basically when client has to create objects on his own by calling the constructor
          * of the class, we can prevent this through factory design pattern
          * client can pass only a parameter and the factory class will return the object of the
