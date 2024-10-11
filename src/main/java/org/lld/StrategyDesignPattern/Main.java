@@ -12,6 +12,7 @@ public class Main {
       now I can return routes by keeping an if-else inside the getRoute function, however this leads t the above issue
       hence it's better to break this getRoute function into separate strategies, now if you have another modeOfTransport I have
       to make minimum changes in the existing code
+      https://refactoring.guru/design-patterns/strategy
      */
 
     Navigator navigator = new Navigator();
