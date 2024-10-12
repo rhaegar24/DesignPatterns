@@ -1,10 +1,18 @@
 package org.lld.Chess;
 
-public interface Piece {
+public abstract class Piece {
 
-  boolean canMove(int x, int y);
+  PieceColor color;
 
-  PieceColor getPieceColor();
+  Boolean killed = Boolean.FALSE;
 
-  void setKilled();
+  abstract boolean canMove(Board board, Cell x, Cell y);
+
+  public PieceColor getPieceColor() {
+    return color;
+  }
+
+  void setKilled() {
+    this.killed = Boolean.TRUE;
+  }
 }

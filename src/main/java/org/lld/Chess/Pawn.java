@@ -1,26 +1,13 @@
 package org.lld.Chess;
 
-public class Pawn implements Piece {
-
-  PieceColor color;
-
-  Boolean killed = Boolean.FALSE;
+public class Pawn extends Piece {
 
   Pawn(PieceColor color) {
     this.color = color;
   }
 
   @Override
-  public boolean canMove(int x, int y) {
+  public boolean canMove(Board board, Cell x, Cell y) {
     return false;
-  }
-
-  @Override
-  public PieceColor getPieceColor(){
-    return color;
-  }
-
-  public void setKilled(){
-    this.killed = Boolean.TRUE;
   }
 }

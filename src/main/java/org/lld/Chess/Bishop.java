@@ -1,26 +1,15 @@
 package org.lld.Chess;
 
-public class Bishop implements Piece {
+public class Bishop extends Piece {
 
   PieceColor color;
-
-  Boolean killed = Boolean.FALSE;
 
   Bishop(PieceColor color) {
     this.color = color;
   }
 
   @Override
-  public boolean canMove(int x, int y) {
+  public boolean canMove(Board board, Cell x, Cell y) {
     return false;
-  }
-
-  @Override
-  public PieceColor getPieceColor(){
-    return color;
-  }
-
-  public void setKilled(){
-    this.killed = Boolean.TRUE;
   }
 }

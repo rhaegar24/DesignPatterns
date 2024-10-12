@@ -22,7 +22,7 @@ public class Game {
       Piece piece = x.piece;
 
       if(piece.getPieceColor().equals(player.color)){
-          if(piece.canMove(y.x, y.y)){
+          if(piece.canMove(board, x, y)){
               x.piece = null;
               if (y.piece!=null){
                   y.piece.setKilled();
